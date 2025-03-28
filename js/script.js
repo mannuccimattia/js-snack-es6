@@ -78,7 +78,7 @@ const teams = [
 
 // funzione numero random
 rng =(min, max) => {
-  return Math.floor(Math.random() * (max - min +1) + 1);
+  return Math.floor(Math.random() * (max - min) + min);
 }
 
 // assegno numeri random a points e faultNum
