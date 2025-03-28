@@ -21,3 +21,17 @@ const cycles = [
   },
 ];
 
+// definisco le variabili di controllo
+let lessWeight = cycles[0].weight;
+let lighter;
+
+// ciclo per determinare la più leggera
+for(i=0; i<cycles.length; i++){
+  if(cycles[i].weight < lessWeight){
+    lighter = cycles[i];
+    lessWeight = cycles[i].weight
+  }
+}
+
+// stampo in console
+console.log(lighter.brand + " è la bici più leggera (" + lessWeight + " gr).");
