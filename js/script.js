@@ -75,4 +75,15 @@ const teams = [
     faultNum: 0
   },
 ]
-console.log(teams)
+
+// funzione numero random
+rng =(min, max) => {
+  return Math.floor(Math.random() * (max - min +1) + 1);
+}
+
+// assegno numeri random a points e faultNum
+for(let i=0; i<teams.length; i++){
+  teams[i].points = rng(0, 100);
+  teams[i].faultNum = rng(0, 100);
+}
+
